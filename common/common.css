@@ -180,14 +180,14 @@ header .inner .more-btn{
     right: 120px;
     z-index: 9999;
     background: none;
-    background-image: url(../img/btn_arrowup_navy_normal.png);
+    background-image: url(/images/btn_arrowup_navy_normal.png);
     cursor: pointer;
     border: none;
     }
 
 #btn-back-to-top:hover {
     background: none;
-    background-image: url(../img/btn_arrowup_orange.png);
+    background-image: url(/images/btn_arrowup_orange.png);
     }
 
 
@@ -276,12 +276,12 @@ header .inner .more-btn{
         width: 24px;
         height: 24px;
         margin: 0 auto;
-        background: url(../img/ic_menu.png) no-repeat center;
+        background: url(/images/ic_menu.png) no-repeat center;
         background-size: contain;
     }
 
     .more-btn.active .icon{
-        background: url(../img/ic_close.png) no-repeat center;
+        background: url(/images/ic_close.png) no-repeat center;
         background-size: contain;
     }
 
@@ -329,7 +329,7 @@ header .inner .more-btn{
         width: 24px;
         height: 24px;
         margin: 0 auto;
-        background: url(../img/ic_language.png) no-repeat center;
+        background: url(/images/ic_language.png) no-repeat center;
         background-size: contain;
     }
 
