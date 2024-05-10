@@ -334,7 +334,7 @@ slider
 /* 더 보기 버튼 스타일 */
 #btn-more-video {
     margin-left: 340px;
-    background: url('../img/btn_more_video_normal.png') no-repeat center; /* 이 부분에 적절한 이미지 경로를 설정해야 합니다. */
+    background: url('/img/btn_more_video_normal.png') no-repeat center; /* 이 부분에 적절한 이미지 경로를 설정해야 합니다. */
     width: 168px;
     height: 46px;
     border: none;
@@ -342,7 +342,7 @@ slider
 }
 
 #btn-more-video:hover {
-    background-image: url('../img/btn_more_video_hover.png'); /* 호버 이미지 경로 설정 */
+    background-image: url('/img/btn_more_video_hover.png'); /* 호버 이미지 경로 설정 */
 }
 
 /* image */
