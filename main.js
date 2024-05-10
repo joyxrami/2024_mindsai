@@ -1,3 +1,14 @@
+$(function(){
+  $(".ourmission .btn_download").hover(function(){
+    $(".btn_download .btn--download--normal").css("visibility","hidden");
+    $(".btn_download .btn--download--hover").css("visibility","visible");
+  },function(){
+    $(".btn_download .btn--download--normal").css("visibility","visible");
+    $(".btn_download .btn--download--hover").css("visibility","hidden");
+  });
+});
+
+
 new Swiper('.media .swiper-container', {
 
 	// 스크롤바 설정하기
