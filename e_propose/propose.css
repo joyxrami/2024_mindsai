@@ -347,3 +347,11 @@ label#division--title::after{
     font-weight: bold;
     margin: 120px auto 0;
     }  */
+
+    .main__visual .inner .propose_done_message a{
+        position: absolute;
+        top: 1960px;
+        left: 41%;
+        font: bold;
+        font-size: 26px;
+    }
