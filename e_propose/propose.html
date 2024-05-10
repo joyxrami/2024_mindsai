@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mindsai</title>
+
+    <!-- Fonts - prtendard-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../e_propose/propose.css">
+
+    <!--GSAP & ScrollToPlugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <!--Lodash-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+    <script defer src="../e_propose/propose.js"></script>
+    <script defer src="../common.js"></script>   
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="inner">
+            <a href="../a_main/main.html" class="logo">
+                <img src="../img/MindsAi_logo.png" alt="Mindsai">
+            </a>
+            <ul class="main-menu">
+                <li class="item">
+                    <div class="item__main">
+                        <a href="../a_main/main.html">회사소개</a>
+                    </div>
+                    <div class="item__mindsnavi">
+                        <a href="../b_mindsnavi/mindsnavi.html">마인즈 내비</a>
+                    </div>
+                    <div class="item__cheeuforest">
+                        <a href="../c_cheeuforest/cheeuforest.html">치유 포레스트</a>
+                    </div>
+                    <div class="item__cheeucounsel">
+                        <a href="../d_cheeucounsel/cheeucounsel.html">치유 심리상담</a>
+                    </div>
+                    <div class="item__propose">
+                        <a id="checked" href="../e_propose/propose.html">제휴·제안 문의</a>
+                    </div>
+                    <div class="item__R&D">
+                        <a href="../f_R&D/R&D.html">R&D</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="main-language">
+                <div class="language">
+                    <a class="language__name" id="KOR" href="../e_propose/propose.html">KOR</a>
+                    <div>|</div>
+                    <a class="language__name">ENG</a>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <!--MAIN_VISUAL-->
+    <!-- VISUAL -->
+    <section class="main__visual">
+
+        <button onclick="backToTop()" id="btn-back-to-top" title="위로 가기"></button>
+
+        <div class="inner">
+            <img src="../img/bg_propose.png" alt="main" >
+            <img class="propose--title" src="../img/img_propose_title.png" alt="">
+            <!-- common btn-to-down -->
+            <img id="btn-to-down-normal" class="btn-to-down" src="../img/btn_arrowdown_normal.png" alt="">
+            <img id="btn-to-down-hover" class="btn-to-down" src="../img/btn_arrowdown_hover.png" alt="">
+            
+            <img class="propose--intro" src="../img/img_propose_intro.png" alt="">
+            <img class="logoset" src="../img/img_logoset_white.png" alt="">
+        </div>
+        
+    </section>
+
+    <!-- propose-write-here -->
+
+    <section class="propose">
+        <div class="inner">
+            <div class="form--inner">
+                <div id="select" class="propose--box">
+                    <div class="propose--title">구분</div>
+                    <div class="propose--inner">
+                        <div class="select-box">구분</div>
+                        <img class="arrow" src="../img/btn_expand_more.png" alt="">
+                    </div>
+                    <ul>
+                        <li class="option">  공공기관</li>
+                        <li class="option">  기업</li>
+                        <li class="option">  개인</li>
+                        <li class="option">  기타</li>
+                    </ul>
+                </div>
+                <div id="propose--02" class="propose--box" id="form--inner--section02">
+                    <div class="propose--title">이름 / (회사명 또는 기관명)</div>
+                    <div class="propose--inner">
+                        <input type="text" name="name" size="20" value="" class="answerbox"><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="form--inner" id="form--inner--section02">
+                <div id="propose--03" class="propose--box" >
+                    <div class="propose--title">연락처</div>
+                    <div class="propose--inner">
+                        <input type="text" name="number" size="20" value="" class="answerbox"><br/>
+                    </div>
+                </div>
+                <div id="propose--04" class="propose--box" id="form--inner--section02">
+                    <div class="propose--title">이메일</div>
+                    <div class="propose--inner">
+                        <input type="text" name="email" size="20" value="" class="answerbox"><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="form--inner" id="form--inner--section01">
+            <div id="propose--05" class="propose--box">
+                <div class="propose--title">문의 사업 (복수선택가능)</div>
+                <div id="checkbox--01" class="checkbox">
+                    <input type='checkbox' name='program'  id="mindsnavi" value='mindsnavi' />
+                    <div>마인즈 내비</div>
+                </div>
+                <div id="checkbox--02" class="checkbox">
+                    <input type='checkbox' name='program' id="cheeuforest" value='cheeuforest' />
+                    <div>치유 포레스트</div>
+                </div>
+                <div id="checkbox--03" class="checkbox">
+                    <input type='checkbox' name='program' id="counsel" value='counsel' />
+                    <div>치유 심리상담</div>
+                </div>
+            </div>
+            </div>
+            <div class="form--inner" id="form--inner--section01">
+            <div id="propose--06" class="propose--box">
+                <div class="propose--title">문의내용</div>
+                <div class="propose--inner">
+                    <input type="text" name="text" size="20" value="" class="answerbox--large"><br/>
+                </div>
+                <p>(주)마인즈에이아이는 문의사항 답변처리를 위해 최소한의 개인정보(이름, 핸드폰, e-mail)만을 수집합니다. <br/>
+                    수집된 개인정보는 다른 어떤 목적과 용도로도 사용되지 않습니다.</p>
+                <div id="agree" class="checkbox">
+                    <input type='checkbox' name='program'  id="mindsnavi" value='mindsnavi' />
+                    <div class="propose--title">개인정보 수집에 동의합니다.</div>
+                </div>
+            </div>
+            </div>
+                <a href="../e_propose/propose2.html">
+                    <div id="input--summit" name="submit">
+                        제휴 제안 보내기
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section class="propose">
+        <div class="inner">
+            <form action="#">
+                <div class="form--inner">
+                    <div id="propose--01" class="propose--box">
+                        <label id="division--title" for="div">구분</label>
+                        <select name="division" id="division" class="answerbox">
+                            <option disabled selected>구분</option>
+                            <option value="public">공공기관</option>
+                            <option value="enterprise">기업</option>
+                            <option value="indivisual">개인</option>
+                            <option value="etc">기타</option>
+                        </select>
+                    </div>
+                    <div id="propose--02" class="propose--box">
+                        <label for="div">이름 / (회사명 또는 기관명)</label>
+                        <input type="text" name="name" size="12" value="" class="answerbox"><br/>
+                    </div>
+                </div>
+
+                <div class="form--inner">
+                    <div id="propose--03" class="propose--box">
+                        <label for="div">연락처</label>
+                        <input type="text" name="number" size="12" value="" class="answerbox"><br/>
+                    </div>
+                    <div id="propose--04" class="propose--box">
+                        <label for="div">이메일</label>
+                        <input type="text" name="email" size="12" value="" class="answerbox"><br/>
+                    </div>
+                </div>
+
+                <div id="propose--05" class="propose--box">
+                    <label for="div">문의 사업 (복수선택가능)</label>
+                    <div class="radiobox">
+                        <div><input type='radio' name='mindsnavi' value='mindsnavi' />마인즈 내비</div>
+                        <div><input type='radio' name='cheeuforest' value='cheeuforest' />치유 포레스트</div>
+                        <div><input type='radio' name='counsel' value='counsel' />치유 심리상담</div>
+                    </div>
+                </div>
+
+                <div id="propose--06" class="propose--box">
+                    <label for="div">문의내용</label>
+                    <input type="text" name="text" size="12" value="" class="answerbox--large"><br/>
+                </div>
+
+                <input id="input--summit" type="submit" value="제휴제안 보내기" />
+            </form>
+        </div>
+    </section> -->
+
+    <!-- footer -->
+    <footer>
+        <div class="inner">
+            <ul class="firstfloor">
+                <li class="left">
+                    <div class="left01">이용약관</div>
+                    <div class="left02">개인정보처리방침</div>
+                </li>
+                <li class="right">
+                    <div class="right01">
+                        <a href="https://www.youtube.com/@cheeu342"><img src="../img/btn_youtube.png" alt="/"></a>
+                    </div>
+                    <div class="right02">
+                        <a href="/"><img src="../img/btn_email.png" alt="/"></a>
+                    </div>
+                    <div class="right03">
+                        <a href="https://www.cheeu.co.kr/blog"><img src="../img/btn_blog.png" alt="/"></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="secondfloor">
+                <ul class="second1-1">
+                    <li>상호 : 주식회사 마인즈에이아이</li>
+                    <li>대표자 : 석정호</li>
+                </ul>
+                <ul class="second1-2">
+                    <li>사업자등록증 : 180-86-01522</li>
+                    <li>통신판매업신고증 : 제 2020-서울강남-02788호</li>
+                </ul>
+                <ul class="second1-3">
+                    <li>주소 : 서울특별실 강남구 도곡로 155, 3층(역삼동, 명빌딩)</li>
+                    <li>전화 : 02)6959-7193</li>
+                    <li>팩스 : 02)6959-7194</li>
+                </ul>
+            </div>
+            <div class="thirdfloor">
+                <ul>
+                    <li>본 사이트의 콘텐츠는 저작권의 보호를 받는 바, 무단 전재, 복사, 배포 등을 금합니다.</li>
+                    <li>Copyright ⓒ 2024 마인즈에이아이 All rights reserved.</li>
+                </ul>
+                <ul class="logo">
+                    <img src="../img/Mindsai_white_logo@4x.png" alt="logo_white">
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>

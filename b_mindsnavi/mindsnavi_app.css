@@ -1,0 +1,27 @@
+
+/*MINDSNAVI_VISUAL*/
+/*VISUAL*/
+@media screen and (max-width: 1020px) {
+    .mindsnavi--title{
+        width: 820px;
+    }
+
+    .mindsnavi--intro{
+        width: 680px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .mindsnavi--intro{
+        width: 440px;
+    }
+
+    .mindsnavi--title{
+        width: 620px;
+    }
+
+    .logoset{
+        display: none;
+    }
+}

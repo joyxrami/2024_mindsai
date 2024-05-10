@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mindsai</title>
+
+    <!-- Fonts - prtendard-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/e_propose/propose.css">
+
+    <!--GSAP & ScrollToPlugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <!--Lodash-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+    <script defer src="/e_propose/propose.js"></script>
+    <script defer src="/common.js"></script>   
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="inner">
+            <a href="/" class="logo">
+                <img src="/img/MindsAi_logo.png" alt="Mindsai">
+            </a>
+            <ul class="main-menu">
+                <li class="item">
+                    <div class="item__main">
+                        <a href="/a_main/main.html">회사소개</a>
+                    </div>
+                    <div class="item__mindsnavi">
+                        <a href="/b_mindsnavi/mindsnavi.html">마인즈 내비</a>
+                    </div>
+                    <div class="item__cheeuforest">
+                        <a href="/c_cheeuforest/cheeuforest.html">치유 포레스트</a>
+                    </div>
+                    <div class="item__cheeucounsel">
+                        <a href="/d_cheeucounsel/cheeucounsel.html">치유 심리상담</a>
+                    </div>
+                    <div class="item__propose">
+                        <a id="checked" href="/e_propose/propose.html">제휴·제안 문의</a>
+                    </div>
+                    <div class="item__R&D">
+                        <a href="/f_R&D/R&D.html">R&D</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="main-language">
+                <div class="language">
+                    <a class="language__name" id="KOR" href="/e_propose/propose.html">KOR</a>
+                    <div>|</div>
+                    <a class="language__name">ENG</a>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <!--MAIN_VISUAL-->
+    <!-- VISUAL -->
+    <section class="main__visual">
+
+        <button onclick="backToTop()" id="btn-back-to-top" title="위로 가기"></button>
+
+        <div class="inner">
+            <img src="/img/bg_propose.png" alt="main" >
+            <img class="propose--title" src="/img/img_propose_title.png" alt="">
+            <!-- common btn-to-down -->
+            <img id="btn-to-down-normal" class="btn-to-down" src="/img/btn_arrowdown_normal.png" alt="">
+            <img id="btn-to-down-hover" class="btn-to-down" src="/img/btn_arrowdown_hover.png" alt="">
+            
+            <img class="propose--intro" src="/img/img_propose_intro.png" alt="">
+            <img class="logoset" src="/img/img_logoset_white.png" alt="">
+        </div>
+        
+    </section>
+
+    <!-- propose-write-here -->
+
+    <section class="propose">
+        <div class="inner">
+            <a href="/e_propose/propose.html">
+                <div id="input--summit" name="submit">
+                    돌아가기
+                </div>
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="inner">
+            <ul class="firstfloor">
+                <li class="left">
+                    <div class="left01">이용약관</div>
+                    <div class="left02">개인정보처리방침</div>
+                </li>
+                <li class="right">
+                    <div class="right01">
+                        <a href="https://www.youtube.com/@cheeu342"><img src="/img/btn_youtube.png" alt="/"></a>
+                    </div>
+                    <div class="right02">
+                        <a href="/"><img src="/img/btn_email.png" alt="/"></a>
+                    </div>
+                    <div class="right03">
+                        <a href="https://www.cheeu.co.kr/blog"><img src="/img/btn_blog.png" alt="/"></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="secondfloor">
+                <ul class="second1-1">
+                    <li>상호 : 주식회사 마인즈에이아이</li>
+                    <li>대표자 : 석정호</li>
+                </ul>
+                <ul class="second1-2">
+                    <li>사업자등록증 : 180-86-01522</li>
+                    <li>통신판매업신고증 : 제 2020-서울강남-02788호</li>
+                </ul>
+                <ul class="second1-3">
+                    <li>주소 : 서울특별실 강남구 도곡로 155, 3층(역삼동, 명빌딩)</li>
+                    <li>전화 : 02)6959-7193</li>
+                    <li>팩스 : 02)6959-7194</li>
+                </ul>
+            </div>
+            <div class="thirdfloor">
+                <ul>
+                    <li>본 사이트의 콘텐츠는 저작권의 보호를 받는 바, 무단 전재, 복사, 배포 등을 금합니다.</li>
+                    <li>Copyright ⓒ 2024 마인즈에이아이 All rights reserved.</li>
+                </ul>
+                <ul class="logo">
+                    <img src="/img/Mindsai_white_logo@4x.png" alt="logo_white">
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>

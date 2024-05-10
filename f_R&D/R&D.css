@@ -1,0 +1,146 @@
+/*R&D_VISUAL*/
+/*VISUAL*/
+
+.main__visual{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main__visual .inner img{
+    margin: 0 auto;
+}
+
+.main__visual .inner .Rd--title{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    margin: 0 auto;
+}
+
+/* common btn-to-down */
+#btn-to-down-normal{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -66%);
+    margin: 0 auto;
+}
+
+#btn-to-down-hover{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -66%);
+    margin: 0 auto;
+    visibility:hidden;
+}
+
+.logoset{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    transform: translate(-50px, -20px);
+    margin: 0 auto;
+}
+
+/* pipeline */
+.pipeline{
+    padding: 200px 0;
+    background-color: #F5F9FF;
+}
+
+.pipeline .inner .contents img{
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+/* paper */
+/* paper-slider */
+.paper{
+    width: 100%;
+    background-color: #F5F9FF;
+    padding: 200px 0;
+}
+
+.paper .tab_wrap {
+    max-width: 1140px;
+    margin: 50px 0 0 390px;
+    padding: 0;
+}
+
+/* slide */
+/* 슬라이드 */
+.paper .tab_con{ 
+    position: relative;
+    /* 슬라이더 보여지는 범위 */
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1520px;
+}
+
+.paper .my-wrapper {
+    /* 보여지는 슬라이더 전체 */
+    margin: 0 auto;
+    height: 550px;
+    padding: 0;  
+}
+.paper .swiper-container {
+    /* 슬라이더 각각 하나당 보여지는 면적 */
+    /* margin: 0 auto; */
+    height: 100%;
+    overflow: visible;
+}
+
+.paper .swiper-slide {
+    width: 728px;
+	text-align: center;
+	display: flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+	align-items:center; /* 위아래 기준 중앙정렬 */
+	justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+
+.paper .swiper-slide img {
+    position: absolute;
+}
+
+.paper .swiper-slide .img_hover{
+    position: absolute;
+    visibility: hidden;
+}
+
+.paper .swiper-slide-active {
+    height: 100%;
+    opacity:10;
+}
+
+.blur-effect{
+    filter: blur(4px);
+}
+
+
+.swiper-slide-active {
+    height: 100%;
+    opacity:10;
+}
+
+.swiper-slide-active img {
+    filter: brightness(1) grayscale(0);
+}
+
+/* scrollbar */
+/* 스크롤바의 길이 및 위치 설정 */
+.paper .swiper-container-horizontal > .swiper-scrollbar {
+    width: 25%; /* 스크롤바 길이 설정 */
+    left: 25%; /* 스크롤바를 가운데 정렬 */
+    height: 8px;
+    background: rgb(255, 255, 255); /* 스크롤바 배경 색상 */
+}
+
+/* 스크롤바 드래그 핸들의 색상 설정 */
+.paper .swiper-scrollbar-drag {
+    background-color: #6B98E5; /* 스크롤바 색상 설정 */
+}

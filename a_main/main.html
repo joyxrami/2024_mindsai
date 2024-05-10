@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ko">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mindsai</title>
+
+    <!-- Fonts - prtendard-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../a_main/main.css">
+    <link rel="stylesheet" href="../a_main/main_app.css">
+
+    <!--GSAP & ScrollToPlugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <!--Lodash-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+    <script defer src="../a_main/main.js"></script>
+    <script defer src="../common.js"></script>
+    
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="inner">
+            <a href="../a_main/main.html" class="logo">
+                <img src="../img/MindsAi_logo.png" alt="Mindsai">
+            </a>
+            <div class="main-navigation ">
+                <ul class="main-menu">
+                    <li class="item">
+                        <div class="item__main">
+                            <a id="checked" href="../a_main/main.html">회사소개</a>
+                        </div>
+                        <div class="item__mindsnavi">
+                            <a href="../b_mindsnavi/mindsnavi.html">마인즈 내비</a>
+                        </div>
+                        <div class="item__cheeuforest">
+                            <a href="../c_cheeuforest/cheeuforest.html">치유 포레스트</a>
+                        </div>
+                        <div class="item__cheeucounsel">
+                            <a href="../d_cheeucounsel/cheeucounsel.html">치유 심리상담</a>
+                        </div>
+                        <div class="item__propose">
+                            <a href="../e_propose/propose.html">제휴·제안 문의</a>
+                        </div>
+                        <div class="item__R&D">
+                            <a href="../f_R&D/R&D.html">R&D</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="main-language">
+                <div class="language">
+                    <a class="language__name" id="KOR" href="../a_main/main.html">KOR</a>
+                    <div>|</div>
+                    <a class="language__name" id="ENG">ENG</a>
+                </div>
+            </ul>
+            <button class="language-btn">
+                <i class="icon"></i>
+            </button>
+            <button class="more-btn ">
+                <i class="icon"></i>
+            </button>
+        </div>
+    </header>
+    
+        <!--MAIN_VISUAL-->
+        <!-- VISUAL -->
+    <section class="main__visual">
+
+        <button onclick="backToTop()" id="btn-back-to-top" title="위로 가기"></button>
+
+        <!--VIDEO-->
+        <section class="video">
+            <div class="inner">
+                <img class="video-title" src="../img/img_main_title.png" alt="title-text">
+                <img class="video-bg" src="../video/MindsAI_메인영상_blue_1020.gif" alt="main" >
+            </div>
+        </section>
+        
+    </section>
+
+
+<!-- OUR_MISSION -->
+<section class="ourmission">
+    <div class="inner">
+        <div class="ourmission__title">Our Mission</div>
+        <div class="contents">
+            <div class="contents__ourmission__1">
+                마인즈에이아이는 마음의 병에 대한 대중의 인식을 전환하고, 예방관리에 대한 접근성을 세심하게 배려함으로써<br> 
+                정신건강 전문 서비스에 대한 진입장벽을 낮추기 위해 많은 노력을 기울여왔습니다.
+            </div>
+            <div class="contents__ourmission__2">
+                <strong>정신건강을 위한 원스톱(One Stop) 통합 솔루션 제공 전문기업, 마인즈에이아이 </strong><br> 
+                현대인의 정신건강을 책임지고, 나아가 인류의 건강한 정신과 삶의 질 향상에 기여하겠습니다.
+            </div>
+            <div class="contents__ourmission__3">
+                <img src="../img/img_ourmission.png" alt="/" class="ourmission__img">
+                <div class="btn_download">
+                    <img src="../img/btn_download_normal.png" alt="/" class="btn--download--normal">
+                    <img src="../img/btn_download_hover.png" alt="/" class="btn--download--hover">
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+</section>
+
+<!-- business -->
+<section class="business">
+    <div class="inner">
+        <div class="title">비지니스</div>
+        <div class="contents">
+            <ul class="business__contents">
+                <li id="business__title">01</li>
+                <li id="business__contents1">정신건강 분석 평가 프로그램<br>Minds.NAVI 마인즈 내비</li>
+                <li id="business__contents2">언제 어디서나 부담없이 PROVE Test와 타액 호르몬 분석 키트를 활용하면 과학적으로 정밀한 통합분석(심리지표+신체지표)을 통해 자신의 우울 증상과 스트레스 상태를 알아볼 수 있습니다.</li>
+            </ul>
+            <ul class="business__contents">
+                <li id="business__title">02</li>
+                <li id="business__contents1">정신건강 VR 평가·교육·훈련 프로그램<br>CHEEU.Forest 치유포레스트</li>
+                <li id="business__contents2">정신건강의 기초체력을 키우고, 우울증과 스트레스 관리, 정서조절에 도움을 주는 VR평가·교육·훈련 프로그램을 통해 꾸준한 정신건강 관리를 할 수 있습니다.</li>
+            </ul>
+            <ul class="business__contents">
+                <li id="business__title">03</li>
+                <li id="business__contents1">개인맞춤 심리상담<br>CHEEU.Counsel 치유 심리상담</li>
+                <li id="business__contents2">공인된 심리상담가들의 전문 상담을 통해 보다 근본적인 마음의 문제를 해결하고, 몸과 마음이 온전히 건강하도록 치유할 수 있습니다.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- history -->
+<section class="history">
+    <section class="inner">
+        <h1 class="title">연혁</h1>
+        <div class="history--contents">
+            <div class="history--title">
+                <h1><span>20</span>24</h1>
+            </div>
+            <ul>
+                    <ol>
+                    <h2 class="history__right__month">01</h2>
+                        <li>우울증 진단 SaMD 의료기기 확증임상시험 승인<br>
+                                이노비즈인증 획득<br>
+                                협력 심리상담센터 전국망 구축</li>
+                    </ol>
+            </ul>
+        </div>
+        <div class="history--contents">
+            <div class="history--title">
+                <h1><span>20</span>23</h1>
+            </div>
+            <ul>
+                <ol>
+                    <h2 class="history__right__month">05</h2>
+                    <li>고령자 인지기능 진단 프로그램(DTx의료기기)탐색임상시험 승인<br>
+                        중소벤처기업부 아기유니콘 200 기업 선정</li>
+                </ol>
+                <ol>
+                <h2 class="history__right__month">08</h2>
+                    <li>의료기기 GMP 인증 획득</li>
+                </ol>
+                <ol>
+                    <h2 class="history__right__month">09</h2>
+                    <li>ISO 13485 인증 획득</li>
+                </ol>
+                <ol>
+                    <h2 class="history__right__month">12</h2>
+                    <li>우울증 치료 DTx 의료기기 확증임상시험 승인</li>
+                </ol>
+            </ul>
+        </div>
+        <div class="history--contents">
+            <div class="history--title">
+                <h1><span>20</span>22</h1>
+            </div>
+            <ul>
+                <ol>
+                    <h2 class="history__right__month">01</h2>
+                    <li>우울증 치료 DTx 프로그램 GS(소프트웨어품질인증)1등급 획득</li>
+                </ol>
+                <ol>
+                    <h2 class="history__right__month">02</h2>
+                    <li>혁신기업 국가대표 1000 기업 선정(보건복지부)</li>
+                </ol>
+                <ol>
+                    <h2 class="history__right__month">07</h2>
+                    <li>기술평가 T-3 등급 인증</li>
+                </ol>
+                <ol>
+                    <h2 class="history__right__month">08</h2>
+                    <li>시리즈A 투자유치</li>
+                </ol>
+            </ul>
+        </div>
+
+        <div class="history--contents">
+            <div class="history--title">
+                <h1><span>20</span>21</h1>
+            </div>
+            <ul>
+                <ol>
+                    <h2 class="history__right__month">02</h2>
+                    <li>벤처기업확인서 인증 획득</li>
+                </ol>
+                <ol>
+                    <h2 class="history__right__month">08</h2>
+                    <li>SEED 투자유치 완료</li>
+                </ol>
+                <ol>
+                    <h2 class="history__right__month">11</h2>
+                    <li>우울증 진단 SaMD 의료기기 탐색임상시험 승인</li>
+                </ol>
+                <ol>
+                    <h2 class="history__right__month">12</h2>
+                    <li>우울증 치료 DTx 의료기기 탐색임상시험 승인</li>
+                </ol>
+            </ul>
+        </div>
+        <div class="history--contents">
+            <div class="history--title">
+                <h1><span>20</span>20</h1>
+            </div>
+            <ul>
+                <ol>
+                    <h2 class="history__right__month">05</h2>
+                    <li>'치유심리상담센터' 개소<br>
+                        신용보증기금 퍼스트팽귄형 기업 선정
+                    </li>
+                </ol>
+            </ul>
+        </div>
+
+        <div class="history--contents">
+            <div class="history--title">
+                <h1><span>20</span>19</h1>
+            </div>
+            <ul>
+                <ol>
+                    <h2 class="history__right__month">11</h2>
+                    <li>회사설립</li>
+                </ol>
+            </ul>
+        </div>
+    </section>
+</section>
+
+<!-- 파트너스 -->
+<section class="partners">
+    <div class="inner">
+        <div class="title">Partners</div>
+        <div class="contents">
+            <img src="../img/partners/img_partners1.png" alt="">
+            <img class="a" src="../img/partners/img_partners2.png" alt="">
+            <img src="../img/partners/img_partners3.png" alt="">
+            <img src="../img/partners/img_partners4.png" alt="">
+            <img class="a" src="../img/partners/img_partners5.png" alt="">
+            <img src="../img/partners/img_partners6.png" alt="">
+            <img src="../img/partners/img_partners7.png" alt="">
+            <img class="a" src="../img/partners/img_partners8.png" alt="">
+            <img src="../img/partners/img_partners9.png" alt="">
+            <img src="../img/partners/img_partners10.png" alt="">
+            <img class="a" src="../img/partners/img_partners11.png" alt="">
+            <img src="../img/partners/img_partners12.png" alt="">
+            <img src="../img/partners/img_partners13.png" alt="">
+        </div>
+    </div>  
+</section>
+
+<!-- 미디어 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+<section class="media">
+    <div class="inner">
+        <div class="title">미디어</div>
+        <a href="https://www.youtube.com/@cheeu342"><button id="btn-more-video" title="비디오 더보기"></button></a>
+    </div>
+    <!-- 클래스명은 변경하면 안 됨 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../img/youtube_img1.jpg" alt="Image 1" class="img-normal">
+                <img src="../img/youtube_img1_hover.png" alt="Image 1 Hover" class="img-hover">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/youtube_img2.jpg" alt="Image 2" class="img-normal">
+                <img src="../img/youtube_img2_hover.png" alt="Image 2 Hover" class="img-hover">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/youtube_img3.jpg" alt="Image 3" class="img-normal">
+                <img src="../img/youtube_img3_hover.png" alt="Image 3 Hover" class="img-hover">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/youtube_img4.jpg" alt="Image 4" class="img-normal">
+                <img src="../img/youtube_img4_hover.png" alt="Image 4 Hover" class="img-hover">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/youtube_img5.jpg" alt="Image 5" class="img-normal">
+                <img src="../img/youtube_img5_hover.png" alt="Image 5 Hover" class="img-hover">
+            </div>
+            <div class="swiper-slide">
+                <img src="../img/youtube_img6.jpg" alt="Image 6" class="img-normal">
+                <img src="../img/youtube_img6_hover.png" alt="Image 6 Hover" class="img-hover">
+            </div>
+        </div>
+
+        <!-- 네비게이션 버튼 -->
+        <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+        <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+
+        <!-- 페이징 -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- 스크롤바 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+</section>
+
+
+<!-- 뉴스 -->
+<section class="news">
+    <div class="inner">
+        <div class="title">뉴스</div>
+    </div>
+    <div class="tab_wrap">
+        <!-- 탭메뉴 제목 -->
+        <ul class="tit_list">
+            <!-- 디폴트 선택 li에 active 클래스 추가 -->
+            <li class="active"><a href="#con01">전체보기</a></li>
+            <li><a href="#con02">2024</a></li>
+            <li><a href="#con03">2023</a></li>
+            <li><a href="#con04">2022</a></li>
+            <li><a href="#con05">2021</a></li>
+            <li><a href="#con06">2020</a></li>
+        </ul>
+        <!-- 탭메뉴 컨텐츠 -->
+        <div class="tab_con">
+
+        <div id="con01" class="tab_list">
+            <!-- swiper-slide -->
+            <div class="my-container">
+                <div class="my-wrapper">
+                    <div class="swiper-container swiper-container-all">
+                        <div class="swiper-wrapper">
+                            <!-- 2024 -->
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2024-2_normal.png" alt="Image 2024-2" class="img-normal">
+                                <img src="../img/news/btn_cardnews2024-2_hover.png" alt="Image 2024-2" class="img-hover">
+                            </div>      
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2024-1_normal.png" alt="Image 2024-1" class="img-normal">
+                                <img src="../img/news/btn_cardnews2024-1_hover.png" alt="Image 2024-1" class="img-hover">
+                            </div>                                  
+                            <!-- 2023 -->
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-6_normal.png" alt="Image 2023-6" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-6_hover.png" alt="Image 2023-6" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-5_normal.png" alt="Image 2023-5" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-5_hover.png" alt="Image 2023-5" class="img-hover">
+                            </div>     
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-4_normal.png" alt="Image 2023-4" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-4_hover.png" alt="Image 2023-4" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-3_normal.png" alt="Image 2023-3" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-3_hover.png" alt="Image 2023-3" class="img-hover">
+                            </div>  
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-2_normal.png" alt="Image 2023-2" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-2_hover.png" alt="Image 2023-2" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-1_normal.png" alt="Image 2023-1" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-1_hover.png" alt="Image 2023-1" class="img-hover">
+                            </div>                                                                                                                 
+                            <!-- 2022 -->
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2022-5_normal.png" alt="Image 2022-5" class="img-normal">
+                                <img src="../img/news/btn_cardnews2022-5_hover.png" alt="Image 2022-5" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2022-4_normal.png" alt="Image 2022-4" class="img-normal">
+                                <img src="../img/news/btn_cardnews2022-4_hover.png" alt="Image 2022-4" class="img-hover">
+                            </div>     
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2022-3_normal.png" alt="Image 2022-3" class="img-normal">
+                                <img src="../img/news/btn_cardnews2022-3_hover.png" alt="Image 2022-3" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2022-2_normal.png" alt="Image 2022-2" class="img-normal">
+                                <img src="../img/news/btn_cardnews2022-2_hover.png" alt="Image 2022-2" class="img-hover">
+                            </div>  
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2022-1_normal.png" alt="Image 2022-1" class="img-normal">
+                                <img src="../img/news/btn_cardnews2022-1_hover.png" alt="Image 2022-1" class="img-hover">
+                            </div>     
+                            <!-- 2021 -->
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2021-3_normal.png" alt="Image 2021-3" class="img-normal">
+                                <img src="../img/news/btn_cardnews2021-3_hover.png" alt="Image 2021-3" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2021-2_normal.png" alt="Image 2021-2" class="img-normal">
+                                <img src="../img/news/btn_cardnews2021-2_hover.png" alt="Image 2021-2" class="img-hover">
+                            </div>  
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2021-1_normal.png" alt="Image 2021-1" class="img-normal">
+                                <img src="../img/news/btn_cardnews2021-1_hover.png" alt="Image 2021-1" class="img-hover">
+                            </div>
+                            <!-- 2020 -->
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-13_normal.png" alt="Image 2020-13" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-13_hover.png" alt="Image 2020-13" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-12_normal.png" alt="Image 2020-12" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-12_hover.png" alt="Image 2020-12" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-11_normal.png" alt="Image 2020-11" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-11_hover.png" alt="Image 2020-11" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-10_normal.png" alt="Image 2020-10" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-10_hover.png" alt="Image 2020-10" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-9_normal.png" alt="Image 2020-9" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-9_hover.png" alt="Image 2020-9" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-8_normal.png" alt="Image 2020-8" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-8_hover.png" alt="Image 2020-8" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-7_normal.png" alt="Image 2020-7" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-7_hover.png" alt="Image 2020-7" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-6_normal.png" alt="Image 2020-6" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-6_hover.png" alt="Image 2020-6" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-5_normal.png" alt="Image 2020-5" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-5_hover.png" alt="Image 2020-5" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-4_normal.png" alt="Image 2020-4" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-4_hover.png" alt="Image 2020-4" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-3_normal.png" alt="Image 2020-3" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-3_hover.png" alt="Image 2020-3" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-2_normal.png" alt="Image 2020-2" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-2_hover.png" alt="Image 2020-2" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-1_normal.png" alt="Image 2020-1" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-1_hover.png" alt="Image 2020-1" class="img-hover">
+                            </div>
+                        </div>
+                        <!-- Swiper Scrollbar -->
+                        <div class="swiper-scrollbar swiper-scrollbar-all"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="con02" class="tab_list">
+            <!-- swiper-slide -->
+            <div class="my-container">
+                <div class="my-wrapper">
+                    <div class="swiper-container swiper-container-2024">
+                        <div class="swiper-wrapper">
+                            <!-- 2024 -->
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2024-2_normal.png" alt="Image 2024-2" class="img-normal">
+                                <img src="../img/news/btn_cardnews2024-2_hover.png" alt="Image 2024-2" class="img-hover">
+                            </div>      
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2024-1_normal.png" alt="Image 2024-1" class="img-normal">
+                                <img src="../img/news/btn_cardnews2024-1_hover.png" alt="Image 2024-1" class="img-hover">
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="con03" class="tab_list">
+            <!-- swiper-slide -->
+            <div class="my-container">
+                <div class="my-wrapper">
+                    <div class="swiper-container swiper-container-2023">
+                        <div class="swiper-wrapper">
+                            <!-- 2023 -->
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-6_normal.png" alt="Image 2023-6" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-6_hover.png" alt="Image 2023-6" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-5_normal.png" alt="Image 2023-5" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-5_hover.png" alt="Image 2023-5" class="img-hover">
+                            </div>     
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-4_normal.png" alt="Image 2023-4" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-4_hover.png" alt="Image 2023-4" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-3_normal.png" alt="Image 2023-3" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-3_hover.png" alt="Image 2023-3" class="img-hover">
+                            </div>  
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-2_normal.png" alt="Image 2023-2" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-2_hover.png" alt="Image 2023-2" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2023-1_normal.png" alt="Image 2023-1" class="img-normal">
+                                <img src="../img/news/btn_cardnews2023-1_hover.png" alt="Image 2023-1" class="img-hover">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="con04" class="tab_list">
+            <!-- swiper-slide -->
+            <div class="my-container">
+                <div class="my-wrapper">
+                    <div class="swiper-container swiper-container-2022">
+                        <div class="swiper-wrapper">
+                            <!-- 2022 -->
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2022-5_normal.png" alt="Image 2022-5" class="img-normal">
+                                <img src="../img/news/btn_cardnews2022-5_hover.png" alt="Image 2022-5" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2022-4_normal.png" alt="Image 2022-4" class="img-normal">
+                                <img src="../img/news/btn_cardnews2022-4_hover.png" alt="Image 2022-4" class="img-hover">
+                            </div>     
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2022-3_normal.png" alt="Image 2022-3" class="img-normal">
+                                <img src="../img/news/btn_cardnews2022-3_hover.png" alt="Image 2022-3" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2022-2_normal.png" alt="Image 2022-2" class="img-normal">
+                                <img src="../img/news/btn_cardnews2022-2_hover.png" alt="Image 2022-2" class="img-hover">
+                            </div>  
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2022-1_normal.png" alt="Image 2022-1" class="img-normal">
+                                <img src="../img/news/btn_cardnews2022-1_hover.png" alt="Image 2022-1" class="img-hover">
+                            </div>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="con05" class="tab_list">
+            <!-- swiper-slide -->
+            <div class="my-container">
+                <div class="my-wrapper">
+                    <div class="swiper-container swiper-container-2021">
+                        <div class="swiper-wrapper">
+                            <!-- 2021 -->
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2021-3_normal.png" alt="Image 2021-3" class="img-normal">
+                                <img src="../img/news/btn_cardnews2021-3_hover.png" alt="Image 2021-3" class="img-hover">
+                            </div>    
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2021-2_normal.png" alt="Image 2021-2" class="img-normal">
+                                <img src="../img/news/btn_cardnews2021-2_hover.png" alt="Image 2021-2" class="img-hover">
+                            </div>  
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2021-1_normal.png" alt="Image 2021-1" class="img-normal">
+                                <img src="../img/news/btn_cardnews2021-1_hover.png" alt="Image 2021-1" class="img-hover">
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="con06" class="tab_list">
+            <!-- swiper-slide -->
+            <div class="my-container">
+                <div class="my-wrapper">
+                    <div class="swiper-container swiper-container-2020">
+                        <div class="swiper-wrapper">
+                            <!-- 2020 -->
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-13_normal.png" alt="Image 2020-13" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-13_hover.png" alt="Image 2020-13" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-12_normal.png" alt="Image 2020-12" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-12_hover.png" alt="Image 2020-12" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-11_normal.png" alt="Image 2020-11" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-11_hover.png" alt="Image 2020-11" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-10_normal.png" alt="Image 2020-10" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-10_hover.png" alt="Image 2020-10" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-9_normal.png" alt="Image 2020-9" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-9_hover.png" alt="Image 2020-9" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-8_normal.png" alt="Image 2020-8" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-8_hover.png" alt="Image 2020-8" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-7_normal.png" alt="Image 2020-7" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-7_hover.png" alt="Image 2020-7" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-6_normal.png" alt="Image 2020-6" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-6_hover.png" alt="Image 2020-6" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-5_normal.png" alt="Image 2020-5" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-5_hover.png" alt="Image 2020-5" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-4_normal.png" alt="Image 2020-4" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-4_hover.png" alt="Image 2020-4" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-3_normal.png" alt="Image 2020-3" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-3_hover.png" alt="Image 2020-3" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-2_normal.png" alt="Image 2020-2" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-2_hover.png" alt="Image 2020-2" class="img-hover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/news/btn_cardnews2020-1_normal.png" alt="Image 2020-1" class="img-normal">
+                                <img src="../img/news/btn_cardnews2020-1_hover.png" alt="Image 2020-1" class="img-hover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- footer -->
+<footer>
+    <div class="inner">
+        <ul class="firstfloor">
+            <li class="left">
+                <div class="left01">이용약관</div>
+                <div class="left02">개인정보처리방침</div>
+            </li>
+            <li class="right">
+                <div class="right01">
+                    <a href="https://www.youtube.com/@cheeu342"><img src="../img/btn_youtube.png" alt="/"></a>
+                </div>
+                <div class="right02">
+                    <a href="/"><img src="../img/btn_email.png" alt="/"></a>
+                </div>
+                <div class="right03">
+                    <a href="https://www.cheeu.co.kr/blog"><img src="../img/btn_blog.png" alt="/"></a>
+                </div>
+            </li>
+        </ul>
+        <div class="secondfloor">
+            <ul class="second1-1">
+                <li>상호 : 주식회사 마인즈에이아이</li>
+                <li>대표자 : 석정호</li>
+            </ul>
+            <ul class="second1-2">
+                <li>사업자등록증 : 180-86-01522</li>
+                <li>통신판매업신고증 : 제 2020-서울강남-02788호</li>
+            </ul>
+            <ul class="second1-3">
+                <li>주소 : 서울특별실 강남구 도곡로 155, 3층(역삼동, 명빌딩)</li>
+                <li>전화 : 02)6959-7193</li>
+                <li>팩스 : 02)6959-7194</li>
+            </ul>
+        </div>
+        <div class="thirdfloor">
+            <ul>
+                <li>본 사이트의 콘텐츠는 저작권의 보호를 받는 바, 무단 전재, 복사, 배포 등을 금합니다.</li>
+                <li>Copyright ⓒ 2024 마인즈에이아이 All rights reserved.</li>
+            </ul>
+            <ul class="logo">
+                <img src="../img/Mindsai_white_logo@4x.png" alt="logo_white">
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,539 @@
+/*MAIN_VISUAL*/
+/*VIDEO*/
+.main__visual{
+    width: 100%;
+    height: 1020px;
+    margin: 0 auto;
+}
+
+
+.video{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.video .inner .video-title{
+    position: absolute;
+    z-index: 2;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-54%, -32%);
+}
+
+.video .inner .video-bg{
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    margin: 0 auto;
+    top: 0;
+    left: 50vw;
+    transform: translate(-50%, 0%);
+}
+
+
+
+
+
+/* OUR_MISSION */
+.ourmission{
+    margin: 252px 0 0 0;
+}
+.ourmission .inner {
+    text-align: center;
+}
+.ourmission .inner .ourmission__title{
+    font-size: 80px;
+    font-weight: bold;
+    color: #184488;
+}
+
+.ourmission .inner .contents .contents__ourmission__1{
+    padding: 40px 0;
+}
+
+.ourmission .inner .contents .contents__ourmission__2{
+    padding: 0 0 94px 0;
+}
+
+.ourmission .inner .contents .contents__ourmission__3 img{
+    display: block;
+    margin: 0 auto;
+}
+
+.ourmission .inner .contents .contents__ourmission__3 .btn_download{
+    margin: 90px auto 200px ;
+    position: relative;
+    width: 300px;
+    /* background: #000; */
+}
+
+.ourmission .inner .contents .contents__ourmission__3 .btn_download .btn--download--hover{
+    position: absolute;
+    top: 0px;
+    left: 14px;
+    visibility:hidden;
+}
+
+
+
+/* business */
+.business{
+    width: 100%;
+    background-color: #DBE7F9;
+    padding: 200px 0 200px 0;
+}
+
+/* .business .inner .title{
+    width: 610px;
+    padding: 0 0 20px 0;
+    margin: 0 0 60px 390px;
+    border-bottom: 2px #162B4F solid;
+    color: #162B4F;
+    font-size: 32px;
+    font-weight: bold;
+} */
+.business .inner .contents{
+    margin: 0 0 0 90px;
+    display: flex;
+    margin: 0 75px;
+}
+
+.business .inner .contents ul{
+    background-color: #fff;
+    padding: 24px 38px 47px 37px;
+    margin: 0 15px;
+    width: 33%;
+}
+
+.business .inner .contents li{
+    list-style: none;
+}
+
+
+.business .inner .contents .business__contents #business__title{
+    color: #6B98E5;
+    font-size: 26px;
+}
+.business .inner .contents .business__contents #business__contents1{
+    color: #184488;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 0 20px;
+}
+.business .inner .contents .business__contents #business__contents2{
+    color: #184488;
+    font-size: 19px;
+}
+
+
+
+/* history */
+.history{
+    width: 100%;
+    background-color:#F5F9FF;
+    padding: 200px 0 200px 0;
+}
+
+ol{
+    display: flex;
+}
+
+.history h2{
+    padding-right: 10px;
+}
+
+.history h1{
+    padding: 20px 0 10px ;
+    position: relative; font-size: 33px; color: #000; line-height: 1;
+}
+/* .history h2:before {
+content:""; position: absolute;
+left:-48px; top:50%; transform: translateY(-50%);
+width: 17px; height: 17px; border-radius: 100%;
+box-sizing: border-box;} */
+
+.history .history--contents{
+    display: flex;
+    margin-left: 390px;
+}
+
+.history .history--contents .history--title{
+    width: 100px;
+}
+
+.history h1{
+    padding-right: 20px;
+    color: #6B98E5;
+}
+
+.history .history--contents ul{
+    border-bottom: solid 2px #D6E1F2;
+    width: 520px;
+}
+
+.history h1 span{
+    color: #162B4F;
+}
+
+
+.history ul {position: relative; padding: 0 0 0 48px;}
+
+.history ul:before { content:""; position:absolute; left:8px; top:0;
+        width: 2px; height:100%; background:#D6E1F2;}
+
+
+/* .history .history__right__month:first-child:before { top:10px; height:calc(100% - 10px);} */
+
+
+.history ol { padding: 20px 0 26px; }
+.history li {font-size: 17px; color:#000; line-height: 29px;  }
+
+
+
+/* partners */
+.partners{
+    width: 100%;
+    background-color:#CEDDF5;
+    padding: 200px 0 200px 0;
+}
+
+.partners .contents{
+    display: grid;
+    grid-template-columns: 420px 420px 420px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.partners .contents img{
+    align-self: center;
+    justify-self: center;
+}
+
+.partners .inner .contents .a{
+    padding: 0 20px;
+}
+
+
+
+
+/* media */
+/* .media{
+    background: #EEF4FF;
+    padding: 200px 0;
+    position: relative;
+}
+
+#btn-more-video {
+    position: absolute;
+    width: 168px;
+    height: 46px;
+    right: 390px;
+    background-image: url(../img/btn_more_video_normal.png);
+    cursor: pointer;
+    border: none;
+    }
+
+#btn-more-video:hover {
+    background-image: url(../img/btn_more_video_hover.png);
+    }
+
+slider
+.slider__wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__img{
+    position: relative;
+    width: 728px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.slider__inner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 4000px;
+    height: 450px;
+}
+
+.slider{
+    position: relative;
+    padding: auto;
+    width: 800px;
+    height: 450px;
+}
+
+.slider__btn a{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    width: 58px;
+    height: 58px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.slider__btn a.prev{
+    left:0;
+    background-image: url(../img/btn_arrowleft_normal.png);
+}
+
+.slider__btn a.prev:hover{
+    background-image: url(../img/btn_arrowleft_hover.png);
+}
+
+.slider__btn a.next{
+    right:0;
+    background-image: url(../img/btn_arrowright_normal.png);
+}
+
+.slider__btn a.next:hover{
+    background-image: url(../img/btn_arrowright_hover.png);
+}
+
+.slider__dot{
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+}
+
+.slider__dot .dot{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    border-radius: 50%;
+    text-indent: -9999px;
+    transition: all 0.3s;
+    margin: 2px;
+}
+
+.slider__dot .dot.active{
+    background-color: #fff;
+} */
+
+/* media */
+.media {
+    padding: 200px 0;
+    background-color: #EEF4FF;
+    position: relative;
+    width: 100%;
+}
+
+.media .inner{
+    width: 1920px;
+    display: flex;
+}
+
+/* 더 보기 버튼 스타일 */
+#btn-more-video {
+    margin-left: 340px;
+    background: url('../img/btn_more_video_normal.png') no-repeat center; /* 이 부분에 적절한 이미지 경로를 설정해야 합니다. */
+    width: 168px;
+    height: 46px;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-more-video:hover {
+    background-image: url('../img/btn_more_video_hover.png'); /* 호버 이미지 경로 설정 */
+}
+
+/* image */
+.media .swiper-container {
+	width: 1323px;
+	height:489px;
+}
+
+/* .media .swiper-container .swiper-wrapper{
+    justify-content: left;
+} */
+
+.media .swiper-slide {
+    width: 728px;
+	text-align: center;
+	display: flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+	align-items:center; /* 위아래 기준 중앙정렬 */
+	justify-content:center; /* 좌우 기준 중앙정렬 */
+    filter: blur(4px);
+}
+
+.media .swiper-slide-active {
+    justify-content: center;
+    padding: 0 20px;
+    margin: 0 30px;
+    filter: none;
+}
+
+/* img hover */
+.swiper-slide img {
+    width: 100%; /* 이미지 크기를 슬라이드에 맞게 설정 */
+    transition: opacity 0.5s ease; /* 부드러운 효과를 위한 트랜지션 */
+}
+
+.img-hover {
+    display: none; /* 호버 이미지를 기본적으로 숨김 */
+    position: absolute; /* 절대 위치 지정 */
+
+}
+
+.swiper-slide:hover .img-normal {
+    display: none; /* 호버 시 기본 이미지 숨김 */
+}
+
+.swiper-slide:hover .img-hover {
+    display: block; /* 호버 시 호버 이미지 표시 */
+}
+
+
+/* prev,next button */
+.media .swiper-container .swiper-button-prev, .swiper-button-next {
+    width: 50px; /* 버튼 너비 설정 */
+    height: 50px; /* 버튼 높이 설정 */
+    line-height: 50px; /* 텍스트 세로 정렬 */
+    text-align: center; /* 텍스트 가로 정렬 */
+    padding: 0 50px;
+}
+
+
+/* scrollbar */
+.media .swiper-scrollbar{
+    display: none;
+}
+/* 스크롤바의 길이 및 위치 설정 */
+.media .swiper-container-horizontal > .swiper-scrollbar {
+    width: 50%; /* 스크롤바 길이 설정 */
+    left: 25%; /* 스크롤바를 가운데 정렬 */
+    height: 8px;
+    background: rgb(255, 255, 255); /* 스크롤바 배경 색상 */
+}
+
+/* 스크롤바 드래그 핸들의 색상 설정 */
+.media .swiper-scrollbar-drag {
+    background-color: #6B98E5; /* 스크롤바 색상 설정 */
+}
+
+
+
+
+/* news */
+/* 탭메뉴 */
+.news{
+    width: 100%;
+    background-color:#EEF4FF;
+    padding: 200px 0;
+}
+
+.news .tab_wrap {
+    max-width: 1140px;
+    margin: 50px 0 0 390px;
+    padding: 0;
+}
+.news .tab_wrap .tit_list {
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 0;
+}
+
+.news .tab_wrap .tit_list > li {
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: top;
+}
+.news .tab_wrap .tit_list > li a{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    border: none;
+}
+
+.news .tab_wrap .tit_list > li a:first-child{
+    padding-left: 5px;
+}
+
+.news .tab_wrap .tit_list > li a:hover {
+    /* background: #FFF; */
+    color: #E65B53;
+}
+.news .tab_wrap .tit_list > li.active a {
+    position: relative;
+    /* background: #fff; */
+    color: #E65B53;
+    z-index: 2;
+}
+
+
+/* slide */
+/* 슬라이드 */
+
+.news .tab_con{ 
+    position: relative;
+    /* 슬라이더 보여지는 범위 */
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1520px;
+}
+
+.news .my-wrapper {
+    /* 보여지는 슬라이더 전체 */
+    margin: 0 auto;
+    height: 550px;
+    padding: 0;  
+}
+.news .swiper-container {
+    /* 슬라이더 각각 하나당 보여지는 면적 */
+    /* margin: 0 auto; */
+    height: 100%;
+    overflow: visible;
+}
+
+.news .swiper-slide {
+    width: 728px;
+	text-align: center;
+	display: flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+	align-items:center; /* 위아래 기준 중앙정렬 */
+	justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+
+.news .swiper-slide img {
+    position: absolute;
+    /* filter: brightness(1) grayscale(0) blur(5px); */
+}
+
+.news .swiper-slide .img_hover{
+    position: absolute;
+    visibility: hidden;
+}
+
+.news .swiper-slide-active {
+    height: 100%;
+    opacity:10;
+}
+
+.blur-effect{
+    filter: blur(4px);
+}
+
+/* scrollbar */
+/* 스크롤바의 길이 및 위치 설정 */
+.news .swiper-container-horizontal > .swiper-scrollbar {
+    width: 25%; /* 스크롤바 길이 설정 */
+    left: 25%; /* 스크롤바를 가운데 정렬 */
+    height: 8px;
+    background: rgb(255, 255, 255); /* 스크롤바 배경 색상 */
+}
+
+/* 스크롤바 드래그 핸들의 색상 설정 */
+.news .swiper-scrollbar-drag {
+    background-color: #6B98E5; /* 스크롤바 색상 설정 */
+}

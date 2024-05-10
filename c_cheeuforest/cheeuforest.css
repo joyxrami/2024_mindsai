@@ -1,0 +1,233 @@
+/*MINDSNAVI_VISUAL*/
+/*VISUAL*/
+
+.main__visual{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main__visual .inner img{
+    margin: 0 auto;
+}
+
+.main__visual .cheeuforest--title{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    margin: 0 auto;
+}
+
+.cheeuforest--intro{
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -76%);
+    margin: 0 auto;
+}
+
+.logoset{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    transform: translate(-50px, -20px);
+    margin: 0 auto;
+}
+
+/* service */
+.service{
+    width: 100%;
+    background-color: #FFF;
+    padding: 200px 0 200px 0;
+}
+
+.service .inner .contents .contents_text{
+    width: 1440px;
+    padding: 0 0 10px 0;
+    margin: 0 0 0 390px;
+    color: #162B4F;
+}
+
+.service .inner .contents #contents--title{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.service .inner .contents #contents--subtitle{
+    font-size: 28px;
+    margin: 0 0 60px 390px;
+}
+
+.service .inner .contents img{
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+
+/* programs */
+.programs{
+    width: 100%;
+    background-color: #E0E7F2;
+    padding: 200px 0 200px 0;
+    position: relative;
+}
+
+.programs .contents .program{
+    width: 1600px;
+    background-color: #F2F2F2;
+    padding: 60px 0 100px 0;
+    margin: 0 auto 100px;
+}
+
+/* common title */
+.program .program--title{
+    display: flex;
+    width: 610px;
+    padding: 0 0 20px 0;
+    margin: 0 0 40px 130px;
+    border-bottom: 2px #162B4F solid;
+    color: #162B4F;
+}
+.programs .contents .program .program--title .title--number{
+    font-size: 118px;
+    font-weight: bold;
+    color: #184488;
+}
+
+.programs .contents .program .program--title .title--text{
+    margin: auto 0 auto 34px;
+}
+
+.programs .contents .program .program--title .title--text #title--text--first{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.programs .contents .program .program--title .title--text #title--text--second{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* common subtitle */
+.programs .contents .program--subtitle{
+    width: 1440px;
+    padding: 0 0 20px 0;
+    margin: 0 0 40px 130px;
+    color: #162B4F;
+}
+
+.programs .contents .program .program--subtitle #program--subtitle01{
+    font-size: 36px;
+    font-weight: bold;
+}
+.programs .contents .program .program--subtitle #program--subtitle02{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* program01 */
+.programs .contents .program #program01--img{
+    margin: 0 auto;
+}
+
+/* program02 */
+
+/* program03 */
+.program03--image .swiper-container {
+	width: 1323px;
+	height:489px;
+}
+
+/* .media .swiper-container .swiper-wrapper{
+    justify-content: left;
+} */
+
+.program03--image .swiper-slide {
+    width: 716px;
+	text-align: center;
+	display: flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+	align-items:center; /* 위아래 기준 중앙정렬 */
+	justify-content:center; /* 좌우 기준 중앙정렬 */
+    filter: blur(4px);
+}
+
+.program03--image .swiper-slide-active {
+    justify-content: center;
+    padding: 0 20px;
+    margin: 0 30px;
+    filter: none;
+}
+
+/* img hover */
+.program03--image .swiper-slide img {
+    width: 100%; /* 이미지 크기를 슬라이드에 맞게 설정 */
+    transition: opacity 0.5s ease; /* 부드러운 효과를 위한 트랜지션 */
+}
+
+
+/* prev,next button */
+.program03--image .swiper-container .swiper-button-prev, .swiper-button-next {
+    width: 50px; /* 버튼 너비 설정 */
+    height: 50px; /* 버튼 높이 설정 */
+    line-height: 50px; /* 텍스트 세로 정렬 */
+    text-align: center; /* 텍스트 가로 정렬 */
+    padding: 0 50px;
+}
+
+
+/* scrollbar */
+.program03--image .swiper-scrollbar{
+    display: none;
+}
+/* 스크롤바의 길이 및 위치 설정 */
+.program03--image .swiper-container-horizontal > .swiper-scrollbar {
+    width: 50%; /* 스크롤바 길이 설정 */
+    left: 25%; /* 스크롤바를 가운데 정렬 */
+    height: 8px;
+    background: rgb(255, 255, 255); /* 스크롤바 배경 색상 */
+}
+
+/* 스크롤바 드래그 핸들의 색상 설정 */
+.program03--image .swiper-scrollbar-drag {
+    background-color: #6B98E5; /* 스크롤바 색상 설정 */
+}
+
+
+
+
+
+
+/* target */
+.target{
+    width: 100%;
+    background-color: #F7F8FB;
+    padding: 200px 0 200px 0;
+}
+
+.target .inner .title{
+    display: flex;
+    width: 610px;
+    padding: 0 0 20px 0;
+    margin: 0 0 0 390px;
+    border-bottom: 2px #162B4F solid;
+    color: #162B4F;
+}
+
+.target .subtitle{
+    width: 1140px;
+    padding: 20px 0 200px 0;
+    margin: 0 390px;
+    color: #162B4F;
+    font-size: 32px;
+}
+
+.target .contents .target--img{
+    margin: 0 auto;
+}
+
+.target .contents .target--text{
+    margin: 40px 0 100px;
+    text-align: center;
+    font-size: 32px;
+}

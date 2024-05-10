@@ -1,0 +1,56 @@
+/*CHEEUCOUNSEL_VISUAL*/
+/*VISUAL*/
+
+.main__visual{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main__visual .inner img{
+    margin: 0 auto;
+}
+
+.main__visual .cheeucounsel--title{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    margin: 0 auto;
+}
+
+
+
+.cheeucounsel--intro{
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -76%);
+    margin: 0 auto;
+}
+
+#cheeucounsel--apply--normal{
+    position: absolute;
+    top: 84%;
+    left: 23.5%;
+    transform: translate(-23.5%, -84%);
+    margin: 0 auto;
+}
+
+#cheeucounsel--apply--hover{
+    position: absolute;
+    top: 84%;
+    left: 23.5%;
+    transform: translate(-23.5%, -84%);
+    margin: 0 auto;
+    visibility:hidden;
+}
+
+
+.logoset{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    transform: translate(-50px, -20px);
+    margin: 0 auto;
+}

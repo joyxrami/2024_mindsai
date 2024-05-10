@@ -1,0 +1,311 @@
+
+/*MINDSNAVI_VISUAL*/
+/*VISUAL*/
+
+.main__visual{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main__visual .inner img{
+    margin: 0 auto;
+}
+
+.mindsnavi--title{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    margin: 0 auto;
+}
+
+.mindsnavi--intro{
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -76%);
+    margin: 0 auto;
+}
+
+
+.logoset{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    transform: translate(-50px, -20px);
+    margin: 0 auto;
+}
+
+
+/* service */
+.service{
+    width: 100%;
+    background-color: #FFF;
+    padding: 200px 0 200px 0;
+}
+
+.service .inner .title{
+    width: 610px;
+    padding: 0 0 20px 0;
+    margin: 0 0 60px 390px;
+    border-bottom: 2px #162B4F solid;
+    color: #162B4F;
+    font-size: 32px;
+    font-weight: bold;
+}
+.service .inner .contents img{
+    margin: 0 auto;
+}
+
+/* program_index */
+.program_list{
+    width: 100%;
+    background-color: rgba(224, 231, 242, 50);
+    padding: 200px 0 200px 0;
+}
+
+.program_list .inner .title{
+    width: 610px;
+    padding: 0 0 20px 0;
+    margin: 0 0 60px 390px;
+    border-bottom: 2px #162B4F solid;
+    color: #162B4F;
+}
+
+.program_list .inner .contents{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.program_list .inner .contents img:not(:first-child){
+    padding-left: 40px;
+}
+
+/* program01 */
+.program01{
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 200px 0 200px 0;
+    position: relative;
+}
+
+.program01 .inner .title{
+    display: flex;
+    width: 610px;
+    padding: 0 0 20px 0;
+    margin: 0 0 60px 390px;
+    border-bottom: 2px #162B4F solid;
+    color: #162B4F;
+}
+
+.program01 .inner .title .title--number{
+    font-size: 118px;
+    font-weight: bold;
+    color: #184488;
+}
+
+.program01 .inner .title .title--text{
+    margin: auto 0 auto 34px;
+}
+
+.program01 .inner .title .title--text #title--text--first{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.program01 .inner .title .title--text #title--text--second{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.program01 .inner .contents{
+    margin-left: 390px;
+}
+
+.program01 .inner .contents #contents__01{
+    font-size: 36px;
+    font-weight: bold;
+    color: #184488;
+}
+
+.program01 .inner .contents #contents__02{
+    font-size: 22px;
+}
+
+.program01 .inner .contents #contents__03, #contents__04{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.program01 .inner .contents #contents__04{
+    margin-top: 60px;
+}
+
+.program01 .inner .contents .contents--emphasisbox{
+    margin-top: 10px;
+    background-color:rgba(22, 43, 79, 20%);
+    color: #162B4F;
+    font-weight: bold;
+    width: fit-content;
+    padding: 8px 10px 7px;
+}
+
+.program01 .inner .contents #prove{
+    margin-top: 217px;
+}
+
+.program01 .program01--mockup{
+    position: absolute;
+    top: 160px;
+    right: 140px;
+}
+
+
+/* program02 */
+.program02{
+    width: 100%;
+    background-color: #E0E7F2;
+    padding: 200px 0 200px 0;
+    position: relative;
+}
+
+.program02 .inner .title{
+    display: flex;
+    width: 610px;
+    padding: 0 0 20px 0;
+    margin: 0 0 60px 390px;
+    border-bottom: 2px #162B4F solid;
+    color: #162B4F;
+}
+
+.program02 .inner .title .title--number{
+    font-size: 118px;
+    font-weight: bold;
+    color: #184488;
+}
+
+.program02 .inner .title .title--text{
+    margin: auto 0 auto 34px;
+}
+
+.program02 .inner .title .title--text #title--text--first{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.program02 .inner .title .title--text #title--text--second{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.program02 .inner .contents{
+    margin-left: 390px;
+}
+
+.program02 .inner .contents #contents__01{
+    font-size: 36px;
+    font-weight: bold;
+    color: #184488;
+}
+
+.program02 .inner .contents #contents__03, #contents__04{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.program02 .inner .contents #contents__04{
+    margin-top: 60px;
+}
+
+.program02 .inner .contents #contents__04 li{
+    padding: 15px 0;
+}
+
+
+.program02 .inner .contents #prove{
+    margin-top: 217px;
+}
+
+.program02 .program02--mockup{
+    position: absolute;
+    top: 80px;
+    right: 140px;
+}
+
+
+/* program03 */
+.program03{
+    width: 100%;
+    background-color: #F7F8FB;
+    padding: 200px 0 200px 0;
+}
+
+.program03 .inner .title{
+    display: flex;
+    width: 610px;
+    padding: 0 0 20px 0;
+    margin: 0 0 60px 390px;
+    border-bottom: 2px #162B4F solid;
+    color: #162B4F;
+}
+
+.program03 .inner .title .title--number{
+    font-size: 118px;
+    font-weight: bold;
+    color: #184488;
+}
+
+.program03 .inner .title .title--text{
+    margin: auto 0 auto 34px;
+}
+
+.program03 .inner .title .title--text #title--text--first{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.program03 .inner .title .title--text #title--text--second{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.program03 .inner .contents{
+    margin-left: 390px;
+}
+
+.program03 .inner .contents #contents__01{
+    font-size: 36px;
+    font-weight: bold;
+    color: #184488;
+}
+
+.program03 .inner .contents #contents__02{
+    font-size: 22px;
+}
+
+.program03 .inner .contents #contents__03{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.program03 .inner .contents #contents__03 li{
+    padding: 15px 0;
+}
+
+.program03 .inner .contents .contents--emphasisbox{
+    margin-top: 10px;
+    background-color:rgba(22, 43, 79, 20%);
+    color: #162B4F;
+    font-weight: bold;
+    width: fit-content;
+    padding: 8px 10px 7px;
+}
+
+.program03 .inner .contents #prove{
+    margin-top: 217px;
+}
+
+.program03 .program03--mockup{
+    margin: 40px auto 200px;
+}

@@ -1,0 +1,181 @@
+/*VISUAL*/
+@media screen and (max-width: 768px) {
+
+    .video .inner .video-bg{
+        position: absolute;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .video .inner .video-title{
+        height: 264px;
+    }
+    
+}
+
+/*OUR_MISSION*/
+@media screen and (max-width: 768px) {
+    .ourmission .inner .ourmission__title{
+        height: 264px;
+        top: 270px;
+        left: -38vw;
+        margin: 0 auto;
+    }
+
+    .contents{
+        font-size: 18px;
+        padding: 0 30px;
+    }
+}
+
+/*BUSINESS*/
+@media (max-width: 1020px){
+    .business .inner .contents{
+        display: block;
+        padding: 20px;
+    }
+
+    .business .inner .contents ul{
+        width: 80%;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 786px){
+    .business .inner .contents ul{
+        margin: 20px;
+    }
+}
+
+
+/*HISTORY*/
+@media (max-width: 1560px){
+    .history .history--contents{
+        display: block;
+        margin-left: 120px;
+    }
+
+}
+
+@media (max-width: 1020px){
+    .history .history--contents{
+        display: block;
+        margin-left: 120px;
+    }
+
+}
+
+@media (max-width: 786px){
+    .history .history--contents{
+        font-size: 12px;
+    }
+    .history ol { padding: 10px 0 16px; }
+    .history li { font-size: 14px; }
+    .history ul { padding: 0 0 0 24px; }
+}
+
+/* PARTNERS */
+@media (max-width: 1020px){
+    .partners .contents{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .partners .contents img{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 786px){
+    .partners .contents{
+        display: block;
+    }
+    .partners .contents img{
+        padding: 10px 0;
+        width: 320px;
+    }
+
+    .partners .inner .contents .a{
+        padding: 10px 0;
+    }
+}
+
+
+/* 앱 화면 */
+@media (max-width: 1530px){
+    #btn-more-video {
+        display: none;
+        }
+}
+
+@media (max-width: 1020px){
+    .media .section .slidelist li .youtube_img{
+        width: 60%;
+    }
+
+    /* #btn-more-video {
+        display: block;
+        top: 274px;
+        left: 120px;
+        } */
+
+    .media .section .slidelist .left{
+        left: -120px;
+    }
+    .media .section .slidelist .right{
+        right: -120px;
+    } 
+    
+    .media .section .slidelist .left:hover{
+        left: -120px;
+    }
+    .media .section .slidelist .right:hover{
+        right: -120px;
+    }
+
+}
+
+
+@media (max-width: 786px){
+    .media .section .slidelist li .youtube_img{
+        width: 40%;
+    }
+
+    #btn-more-video {
+        display: block;
+        top: 274px;
+        left: 120px;
+        }
+}
+
+
+/* 앱 화면 */
+@media (max-width: 1530px){
+    .tab_wrap .tit_list > li a{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1020px){
+    .tab_wrap{
+    margin: 0 0 60px 120px;
+    }
+}
+
+
+@media (max-width: 786px){
+    .tab_wrap .tit_list > li a{
+        font-size: 22px;
+    }
+
+    .media .section .slidelist li .youtube_img{
+        width: 60%;
+    }
+
+    #btn-more-video {
+        display: block;
+        top: 274px;
+        left: 120px;
+        }
+}

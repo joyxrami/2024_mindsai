@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mindsai</title>
+
+    <!-- Fonts - prtendard-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="../b_mindsnavi/mindsnavi.css">
+    <link rel="stylesheet" href="../b_mindsnavi/mindsnavi_app.css">
+
+    <!--GSAP & ScrollToPlugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <!--Lodash-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+    <script defer src="../common.js"></script>
+    
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <!-- HEADER -->
+    <header>
+        <div class="inner">
+            <a href="../a_main/main.html" class="logo">
+                <img src="../img/MindsAi_logo.png" alt="Mindsai">
+            </a>
+            <div class="main-navigation ">
+                <ul class="main-menu">
+                    <li class="item">
+                        <div class="item__main">
+                            <a href="../a_main/main.html">회사소개</a>
+                        </div>
+                        <div class="item__mindsnavi">
+                            <a id="checked" href="../b_mindsnavi/mindsnavi.html">마인즈 내비</a>
+                        </div>
+                        <div class="item__cheeuforest">
+                            <a href="../c_cheeuforest/cheeuforest.html">치유 포레스트</a>
+                        </div>
+                        <div class="item__cheeucounsel">
+                            <a href="../d_cheeucounsel/cheeucounsel.html">치유 심리상담</a>
+                        </div>
+                        <div class="item__propose">
+                            <a href="../e_propose/propose.html">제휴·제안 문의</a>
+                        </div>
+                        <div class="item__R&D">
+                            <a href="../f_R&D/R&D.html">R&D</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="main-language">
+                <div class="language">
+                    <a class="language__name" id="KOR" href="../a_main/main.html">KOR</a>
+                    <div>|</div>
+                    <a class="language__name" id="ENG">ENG</a>
+                </div>
+            </ul>
+            <button class="language-btn">
+                <i class="icon"></i>
+            </button>
+            <button class="more-btn ">
+                <i class="icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!--MAIN_VISUAL-->
+    <!-- VISUAL -->
+    <section class="main__visual">
+
+        <button onclick="backToTop()" id="btn-back-to-top" title="위로 가기"></button>
+
+        <div class="inner">
+            <img class="mindsnavi--bg" src="../img/bg_mindsnavi.png" alt="main" >
+            <img class="mindsnavi--title" src="../img/img_mindsnavi_title.png" alt="">
+            <!-- common btn-to-down -->
+            <img id="btn-to-down-normal" class="btn-to-down" src="../img/btn_arrowdown_normal.png" alt="">
+            <img id="btn-to-down-hover" class="btn-to-down" src="../img/btn_arrowdown_hover.png">
+                <img class="mindsnavi--intro" src="../img/img_mindsnavi_intro.png" alt=""></img>    
+            <img class="logoset" src="../img/img_logoset_white.png" alt="">
+        </div>
+        
+    </section>
+
+    <!-- service -->
+    <section class="service">
+        <div class="inner">
+            <div class="title">서비스과정</div>
+            <div class="contents">
+                <img src="../img/img_mindsnavi_service.png" alt="">
+            </div>
+        </div>
+    </section>
+
+        <!-- program_list -->
+        <section class="program_list">
+            <div class="inner">
+                <div class="title">프로그램 구성</div>
+                <div class="contents">
+                    <img src="../img/img_mindsnavi_program1.png" alt="">
+                    <img src="../img/img_mindsnavi_program2.png" alt="">
+                    <img src="../img/img_mindsnavi_program3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- program01 -->
+        <section class="program01">
+            <div class="inner">
+                <div class="title">
+                    <div class="title--number">1</div>
+                    <div class="title--text">
+                        <p id="title--text--first">PROVE TEST</p>
+                        <p id="title--text--second">심리지표 평가</p>
+                    </div>
+                </div>
+                <div class="contents">
+                    <p id="contents__01">자기보고식 설문지 PROVE검사 프로그램</p>
+                    <p id="contents__02">(Depressive symptomatology & PROtective-VulnErable factor Battery Test)</p>
+                    <p id="contents__03">전문의, 임상심리전문가, 상담심리전문가 & (주)마인즈에이아이 R&D센터 공동 개발</p>
+                    <p id="contents__04">주관적으로 현재 우울 증상을 느끼고 있지 않더라도 개인이 정신건강 측면에서<br>
+                        취약요인과 보호요인에 대해 인지하고 지속적으로 정신건강 관리를 할 수 있도록<br>
+                        평가 결과가 자동 산출됩니다.</p>
+                    <div class="contents--emphasisbox">*우울증상 및 정신건강 보호-취약요인 선별평가도구 PROVE test</div>
+                    <img id="prove" src="../img/img_mindsnavi_prove.png" alt="">
+                </div>
+            </div>
+            <img class="program01--mockup" src="../img/img_mindsnavi_mockup1.png" alt="">
+        </section>
+
+        <!-- program02 -->
+        <section class="program02">
+            <div class="inner">
+                <div class="title">
+                    <div class="title--number">2</div>
+                    <div class="title--text">
+                        <p id="title--text--first">타액 호르몬 분석</p>
+                        <p id="title--text--second">신체지표 분석</p>
+                    </div>
+                </div>
+                <div class="contents">
+                    <p id="contents__01">타액채취(Cortisol, DHEA)</p>
+                    <p id="contents__03">스트레스에 따른 호르몬 분비량을 분석하여 현재 스트레스 정도 및 지속기간 등을<br>
+                    알아보고, 스트레스 대응 능력을 보다 객관적이고 과학적으로 평가하는 프로그램</p>
+                    <ul id="contents__04">
+                        <li>타액 수집 튜브/깔때기가 포함된 키드(Kit)를 활용하여 언제 어디서든<br>
+                        간편하고 쉽게 채취한 타액만으로도 신체지표에 대한 정확한 결과 도출 가능</li>
+                        <li>마인즈 내비는 타액분석 시 정밀함과 측정민감도가 훨씬 높은 ELISA방식 사용</li>
+                        <li>특허기술을 활용한 자동분석프로그램으로 스트레스 단계 예측, Cortisol과<br>
+                        DHEA 두 호르몬간의 비율을 분석함으로써 부신피질 기능상태를 총 9단계로 종합적 평가</li>
+                    </ul>
+                </div>
+            </div>
+            <img class="program02--mockup" src="../img/img_mindsnavi_mockup2.png" alt="">
+        </section>
+
+        <!-- program03 -->
+        <section class="program03">
+            <div class="inner">
+                <div class="title">
+                    <div class="title--number">3</div>
+                    <div class="title--text">
+                        <p id="title--text--first">종합 결과보고서</p>
+                        <p id="title--text--second">제공</p>
+                    </div>
+                </div>
+                <div class="contents">
+                    <ul id="contents__03">
+                        <li>심리평가 결과와 타액 호르몬 분석 결과를 통합한 분석 보고서</li>
+                        <li>현재 스트레스 정도 및 정신건강 상태를 생화학적 지표 + 심리사회적 지표로 통합분석하여 단계화 표현</li>
+                        <li>평가 결과는 정신건강 확인 및 점검, 우울증 사전예방 및 악화 방지 목적으로 제공됨</li>
+                        <li>(주)마인즈에이아이 대표이사 석정호(강남세브란스병원 정신건강의학과 전문의)의 지도, 감독 하에 진행</li>
+                        <li>Minds.NAVI평가 결과는 임상심리전문가(한국임상심리학회 발급) / 정신건강임상심리사 1급(보건복지부 발급) /<br>
+                        상담심리사 1급(한국상담심리학회 발급)과 같이 공인된 자격증을 취득한 전문가의 검수를 거쳐 대상자에게 제공</li>
+                    </ul>
+                    <div class="contents--emphasisbox">*마인즈 내비(Minds.NAVI)결과지 저작권 등록</div>
+                </div>
+                <img class="program03--mockup" src="../img/img_mindsnavi_mockup3.png" alt="">
+            </div>
+        </section>
+
+        <!-- footer -->
+    <footer>
+        <div class="inner">
+            <ul class="firstfloor">
+                <li class="left">
+                    <div class="left01">이용약관</div>
+                    <div class="left02">개인정보처리방침</div>
+                </li>
+                <li class="right">
+                    <div class="right01">
+                        <a href="https://www.youtube.com/@cheeu342"><img src="../img/btn_youtube.png" alt="/"></a>
+                    </div>
+                    <div class="right02">
+                        <a href="/"><img src="../img/btn_email.png" alt="/"></a>
+                    </div>
+                    <div class="right03">
+                        <a href="https://www.cheeu.co.kr/blog"><img src="../img/btn_blog.png" alt="/"></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="secondfloor">
+                <ul class="second1-1">
+                    <li>상호 : 주식회사 마인즈에이아이</li>
+                    <li>대표자 : 석정호</li>
+                </ul>
+                <ul class="second1-2">
+                    <li>사업자등록증 : 180-86-01522</li>
+                    <li>통신판매업신고증 : 제 2020-서울강남-02788호</li>
+                </ul>
+                <ul class="second1-3">
+                    <li>주소 : 서울특별실 강남구 도곡로 155, 3층(역삼동, 명빌딩)</li>
+                    <li>전화 : 02)6959-7193</li>
+                    <li>팩스 : 02)6959-7194</li>
+                </ul>
+            </div>
+            <div class="thirdfloor">
+                <ul>
+                    <li>본 사이트의 콘텐츠는 저작권의 보호를 받는 바, 무단 전재, 복사, 배포 등을 금합니다.</li>
+                    <li>Copyright ⓒ 2024 마인즈에이아이 All rights reserved.</li>
+                </ul>
+                <ul class="logo">
+                    <img src="../img/Mindsai_white_logo@4x.png" alt="logo_white">
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
