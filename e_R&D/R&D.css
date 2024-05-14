@@ -107,10 +107,26 @@
     position: absolute;
 }
 
-.paper .swiper-slide .img_hover{
+/* 추가 */
+.paper .swiper-slide .img-hover{
     position: absolute;
     visibility: hidden;
+    opacity: 0;
 }
+
+/* 호버 상태일 때 호버 이미지를 보여주고, 일반 이미지를 숨김 */
+.paper .swiper-slide:hover .img-hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.paper .swiper-slide:hover .img-normal {
+    visibility: hidden;
+    opacity: 0;
+}
+/* 추가 */
+
+
 
 .paper .swiper-slide-active {
     height: 100%;
